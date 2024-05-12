@@ -1,0 +1,17 @@
+[   {
+      "nombre": "Seleccionar sala...",
+      "valor": 0
+    },
+    {
+      "nombre": "De 45 días a 1 año: Sala Violeta",
+      "valor": 8000
+    },
+    {
+      "nombre": "De 1 a 2 años: Sala Amarilla",
+      "valor": 7500
+    },
+    {
+      "nombre": "De 2 a 3 años: Sala Verde",
+      "valor": 6500
+    }
+  ]

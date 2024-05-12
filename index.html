@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre entrega 1 - Cotizador</title>
+    <link rel="icon" href="img/logofavi.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./style.css">  
+</head>
+<body>
+    <h1>Cotizador cuota mensual + Matrícula anual</h1>
+    <div class="logo">
+        <img class="logoGrande" src="./img/LogoGrande.png" alt="">
+    </div>
+    <div class="texto">
+        <p>Bienvenida/o a nuestro cotizador online para el amternarl Abracadrabra.</p>
+        <p>Para iniciar la consulta, le vamos a pedir que complete el formulario que tenemos a continuación.</p>
+        <p>Una vez finalizado, en la parte de abajo quedaran los datos ingresados.</p>
+    </div>
+
+    <div>
+        <form class="form">
+            <div class="form-group">
+                <label>Nombre y/o Apellido:</label>
+                <input type="text" id="nombreApellido" class="form-control">
+                <label for="exampleFormControlInput1">Mail de contacto:</label>
+                <input type="email" class="form-control" placeholder="e-mail">
+            </div>
+            <div class="form-group">
+                <label >
+                    Seleccione la sala, según la edad por la que quiera consultar, dependiendo la edad de su hija/o. 
+                </label>
+                    <select class="form-control" id="salaSeleccionada">
+
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Coloque la cantidad de horas que asistira su hijo/a al estableimiento. El mínimo de horas permitidas son 3 horas y emáximo 7 horas.</label>
+                    <select class="form-control" id="horasSeleccionadas">
+                        <option value=3>3 horas</option>
+                        <option value=4>4 horas</option>
+                        <option value=5>5 horas</option>
+                        <option value=6>6 horas</option>
+                        <option value=7>7 horas</option>
+                    </select>
+            </div>
+            <div class="form-group comentario">
+                <label for="exampleFormControlTextarea1">Algún comentario:</label>
+                <textarea class="form-control" cols="26" rows="6"></textarea>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <div id="infoIngresada"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
